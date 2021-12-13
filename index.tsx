@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
+
+import Home from './pages/Home/Home';
 
 interface AppProps { }
 interface AppState {
@@ -18,11 +19,8 @@ class App extends Component<AppProps, AppState> {
 
   render() {
     return (
-      <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+      <div>        
+        <Home />
       </div>
     );
   }
